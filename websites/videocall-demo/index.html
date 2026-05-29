@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beam — Video meetings, paid in stablecoins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>BEAM</a>
+      <div class="header-spacer"></div>
+      <button class="user-button">
+        <span class="avatar">GW</span>
+        Gordon W.
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ LANDING ============ -->
+  <main class="landing">
+    <div class="landing-bg"></div>
+
+    <div class="landing-content">
+      <span class="eyebrow">
+        <span class="live"><span class="dot"></span>Live</span>
+        2,140 meetings in session right now
+      </span>
+
+      <h1>Welcome back to <span class="name">Beam</span></h1>
+      <p>Pay-per-call video meetings settled on-chain. Choose what you'd like to do — your wallet's already connected.</p>
+
+      <!-- Action card with custom dropdown -->
+      <div class="action-card">
+        <h2>What would you like to do?</h2>
+        <p class="sub">Select an option below to get started.</p>
+
+        <div class="select-wrap">
+          <button class="select-trigger" data-select-trigger data-value="attend">
+            <span class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </span>
+            <span class="label-wrap">
+              <span class="label">Attend a meeting</span>
+              <span class="desc">Join one you've been invited to</span>
+            </span>
+            <span class="chev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+
+          <div class="select-panel" data-select-panel>
+            <button class="select-option" data-value="attend">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              </span>
+              <span class="label-wrap">
+                <span class="label">Attend a meeting</span>
+                <span class="desc">Join one you've been invited to</span>
+              </span>
+            </button>
+
+            <button class="select-option" data-value="create">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+              <span class="label-wrap">
+                <span class="label">Create a meeting</span>
+                <span class="desc">Start a new instant room</span>
+              </span>
+            </button>
+
+            <button class="select-option" data-value="schedule">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </span>
+              <span class="label-wrap">
+                <span class="label">Schedule a meeting</span>
+                <span class="desc">Set a time and invite attendees</span>
+              </span>
+            </button>
+
+            <button class="select-option" data-value="join-code">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+              </span>
+              <span class="label-wrap">
+                <span class="label">Join by code</span>
+                <span class="desc">Have a meeting ID or invite link?</span>
+              </span>
+              <span class="kbd">⌘ K</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn btn-dark btn-block btn-lg" data-continue-btn>
+          Continue
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+
+        <p style="margin:14px 0 0; font-size:12px; color:var(--ink-mute); text-align:center;">
+          🔒 Connected to wallet · gordon.eth · USDC balance: $284.20
+        </p>
+      </div>
+
+      <div class="quick-stats">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          End-to-end encrypted
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Per-minute billing
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          No subscriptions
+        </span>
+      </div>
+    </div>
+  </main>
+
+  <div class="mini-footer">
+    © 2026 Beam Networks · Demo storefront · Built for stablecoin video meetings
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

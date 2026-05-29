@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balances — Drift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <a href="dashboard.html" class="brand"><span class="brand-mark"></span><span>DRIFT</span></a>
+
+    <div class="side-section-label">Main</div>
+    <ul class="side-nav">
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        <span>Dashboard</span></a></li>
+      <li><a href="send.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span>Send Money</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 12 9 6 9 18 21 18"/><line x1="3" y1="12" x2="3" y2="18"/></svg>
+        <span>Receive Money</span></a></li>
+      <li><a href="balances.html" class="is-active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <span>Balances</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Activity</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Recipients</span></a></li>
+    </ul>
+
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9 1.65 1.65 0 0 0 4.27 7.18l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Settings</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Support</span></a></li>
+    </ul>
+
+    <div class="side-foot">
+      <div class="user-chip">
+        <div class="avatar">GW</div>
+        <div>
+          <div class="name">Gordon W.</div>
+          <div class="role">Personal account</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Wallet</div>
+        <h1>Balances</h1>
+      </div>
+      <div class="topbar-spacer"></div>
+      <button class="btn btn-ghost">+ Add currency</button>
+      <a class="btn btn-primary" href="send.html">Send Money</a>
+    </header>
+
+    <div class="content">
+
+      <!-- Filter chips -->
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:24px;">
+        <button class="btn btn-ghost" style="background:var(--ink); color:#fff; border-color:var(--ink); padding:8px 16px; font-size:13px;">All currencies</button>
+        <button class="btn btn-ghost" style="padding:8px 16px; font-size:13px;">Fiat-backed</button>
+        <button class="btn btn-ghost" style="padding:8px 16px; font-size:13px;">Crypto-collateralized</button>
+        <button class="btn btn-ghost" style="padding:8px 16px; font-size:13px;">Hide empty</button>
+        <div style="flex:1;"></div>
+        <button class="btn btn-ghost" style="padding:8px 16px; font-size:13px;">⇅ Sort: Largest first</button>
+      </div>
+
+      <div class="balance-grid">
+
+        <!-- Featured: total / USD -->
+        <div class="bal-card featured">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name" style="color:rgba(255,255,255,0.6);">Total balance</div>
+              <div class="bal-amt">$48,920.34</div>
+              <div class="bal-sub">
+                <span>across 8 currencies</span>
+                <span class="bal-coin">USD equivalent</span>
+              </div>
+            </div>
+            <div class="flag" style="background:rgba(255,255,255,0.12);">USD</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+            <button class="mini">Statement</button>
+          </div>
+        </div>
+
+        <!-- USD -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">US Dollar</div>
+              <div class="bal-amt">$28,410.20</div>
+              <div class="bal-sub"><span class="bal-coin">USDC</span><span>· Base</span></div>
+            </div>
+            <div class="flag" style="background:#2775ca;">USD</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- EUR -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Euro</div>
+              <div class="bal-amt">€8,920.00</div>
+              <div class="bal-sub"><span class="bal-coin">EURC</span><span>· ≈ $9,696</span></div>
+            </div>
+            <div class="flag" style="background:#003399;">EUR</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- GBP -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">British Pound</div>
+              <div class="bal-amt">£3,210.50</div>
+              <div class="bal-sub"><span class="bal-coin">GBPT</span><span>· ≈ $4,063</span></div>
+            </div>
+            <div class="flag" style="background:#c8102e;">GBP</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- MXN -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Mexican Peso</div>
+              <div class="bal-amt">$24,810.00</div>
+              <div class="bal-sub"><span class="bal-coin">MXNB</span><span>· ≈ $1,450</span></div>
+            </div>
+            <div class="flag" style="background:#006847;">MXN</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- NGN -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Nigerian Naira</div>
+              <div class="bal-amt">₦920,400</div>
+              <div class="bal-sub"><span class="bal-coin">cNGN</span><span>· ≈ $582</span></div>
+            </div>
+            <div class="flag" style="background:#008751;">NGN</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- BRL -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Brazilian Real</div>
+              <div class="bal-amt">R$5,140.00</div>
+              <div class="bal-sub"><span class="bal-coin">BRZ</span><span>· ≈ $1,018</span></div>
+            </div>
+            <div class="flag" style="background:#009c3b;">BRL</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- INR -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Indian Rupee</div>
+              <div class="bal-amt">₹68,500</div>
+              <div class="bal-sub"><span class="bal-coin">XSGD</span><span>· ≈ $821</span></div>
+            </div>
+            <div class="flag" style="background:#ff9933;">INR</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Philippine Peso</div>
+              <div class="bal-amt">₱34,210.40</div>
+              <div class="bal-sub"><span class="bal-coin">PHPC</span><span>· ≈ $604</span></div>
+            </div>
+            <div class="flag" style="background:#0038a8;">PHP</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+        <!-- JPY -->
+        <div class="bal-card">
+          <div class="bal-head">
+            <div>
+              <div class="bal-name">Japanese Yen</div>
+              <div class="bal-amt">¥184,200</div>
+              <div class="bal-sub"><span class="bal-coin">JPYC</span><span>· ≈ $1,194</span></div>
+            </div>
+            <div class="flag" style="background:#bc002d;">JPY</div>
+          </div>
+          <div class="bal-actions">
+            <button class="mini">Send</button>
+            <button class="mini">Receive</button>
+            <button class="mini">Convert</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footnote -->
+      <p style="margin-top:24px; color:var(--ink-mute); font-size:13px; max-width:680px;">
+        Balances are held in fully-backed regulated stablecoins. FX rates update every 10 seconds and convert at mid-market —
+        we charge a flat 0.10% transparent fee on conversions, no hidden spreads.
+      </p>
+
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

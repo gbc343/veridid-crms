@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Granted — Scholarship payments, on-chain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="header-left">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Search scholarships, schools…" />
+        </div>
+      </div>
+
+      <nav class="header-center">
+        <a class="nav-link is-active" href="index.html">All Scholarships</a>
+        <a class="nav-link" href="#">Featured Schools</a>
+        <a class="nav-link" href="#">By Field of Study</a>
+        <div class="region-menu">
+          <button class="nav-link" data-region-toggle>
+            Region
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="region-panel" data-region-panel>
+            <a href="region.html"><div class="flag" style="background:#c8493b;">ON</div>Ontario</a>
+            <a href="region.html"><div class="flag" style="background:#1bb15c;">AB</div>Alberta</a>
+            <a href="region.html"><div class="flag" style="background:#2775ca;">BC</div>British Columbia</a>
+            <a href="region.html"><div class="flag" style="background:#7d2d8c;">QC</div>Quebec</a>
+            <a href="region.html"><div class="flag" style="background:#f5a623;">MB</div>Manitoba</a>
+            <a href="region.html"><div class="flag" style="background:#0a0a0a;">NS</div>Nova Scotia</a>
+            <a href="region.html"><div class="flag" style="background:#5a6470;">SK</div>Saskatchewan</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#">How it works</a>
+      </nav>
+
+      <div class="header-right">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"></span>
+          <div>
+            <div>GRANTED</div>
+            <div class="sub">Scholarship Foundation</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <span class="eyebrow">
+      <span class="badge">2026</span> Spring application window now open
+    </span>
+
+    <h1>Scholarships,<br/>paid the <span class="accent">moment</span> you qualify.</h1>
+
+    <p>
+      Granted is a stablecoin-powered scholarship platform connecting students with foundations,
+      universities, and corporate sponsors. Apply once with verified identity — funds are released
+      on-chain directly to your wallet the day your application is approved.
+    </p>
+
+    <p style="font-size:15px;">
+      <strong>Base eligibility:</strong> enrolled or accepted into an accredited post-secondary program · age 16+ · valid government ID.
+      Individual scholarships may add field-of-study, regional, financial-need, or merit-based requirements.
+    </p>
+
+    <ul class="legibility">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Enrolled in accredited program
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Verified identity (ID + selfie)
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Minimum 2.5 GPA (program-dependent)
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Compatible wallet (we'll help)
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ PARTNERS MARQUEE ============ -->
+  <section class="partners">
+    <div class="partners-label">Sponsoring institutions &amp; partner schools</div>
+    <div class="marquee">
+      <!-- duplicated set for seamless scroll -->
+      <div class="partner"><div class="partner-mark" style="background:#c8102e;">U·T</div><div class="partner-name">Univ. of Toronto</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#003d7a;">McG</div><div class="partner-name">McGill University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#231f20;">CIBC</div><div class="partner-name">CIBC Foundation</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#a6192e;">YORK</div><div class="partner-name">York University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#005298;">RBC</div><div class="partner-name">RBC Future Launch</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#0a0a0a;">UBC</div><div class="partner-name">UBC</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#6b2c91;">Leo</div><div class="partner-name">Leo Foundation</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#1bb15c;">TD</div><div class="partner-name">TD Scholars</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#e8a317;">Q·U</div><div class="partner-name">Queen's University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#c8493b;">Mch</div><div class="partner-name">McMaster</div></div>
+
+      <div class="partner"><div class="partner-mark" style="background:#c8102e;">U·T</div><div class="partner-name">Univ. of Toronto</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#003d7a;">McG</div><div class="partner-name">McGill University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#231f20;">CIBC</div><div class="partner-name">CIBC Foundation</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#a6192e;">YORK</div><div class="partner-name">York University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#005298;">RBC</div><div class="partner-name">RBC Future Launch</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#0a0a0a;">UBC</div><div class="partner-name">UBC</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#6b2c91;">Leo</div><div class="partner-name">Leo Foundation</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#1bb15c;">TD</div><div class="partner-name">TD Scholars</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#e8a317;">Q·U</div><div class="partner-name">Queen's University</div></div>
+      <div class="partner"><div class="partner-mark" style="background:#c8493b;">Mch</div><div class="partner-name">McMaster</div></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHOLARSHIP GRID ============ -->
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>Open scholarships</h2>
+        <p>9 active opportunities · $1.4M in funds awaiting application.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-chip is-active" data-filter="all">All fields</button>
+        <button class="filter-chip" data-filter="stem">STEM</button>
+        <button class="filter-chip" data-filter="arts">Arts &amp; Humanities</button>
+        <button class="filter-chip" data-filter="business">Business</button>
+        <button class="filter-chip" data-filter="trades">Trades</button>
+        <button class="filter-chip" data-filter="need">Financial Need</button>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="business,need">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#231f20;">CIBC</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">CIBC Foundation</div>
+            </div>
+          </div>
+          <span class="tag new">Featured</span>
+        </div>
+        <h3>CIBC Future Leaders Scholarship</h3>
+        <p class="desc">Merit and financial-need based award for first-generation post-secondary students entering business or commerce programs.</p>
+        <div class="card-meta">
+          <div class="amt">$10,000 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">June 15, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="stem">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#c8102e;">U·T</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">University of Toronto</div>
+            </div>
+          </div>
+          <span class="tag region">Ontario</span>
+        </div>
+        <h3>Engineering Excellence Award</h3>
+        <p class="desc">For incoming engineering students with demonstrated leadership in robotics, mathematics, or computing competitions.</p>
+        <div class="card-meta">
+          <div class="amt">$7,500 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">May 31, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="stem,need">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#005298;">RBC</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">RBC Future Launch</div>
+            </div>
+          </div>
+          <span class="tag hot">Closing soon</span>
+        </div>
+        <h3>RBC Future Launch Stem Award</h3>
+        <p class="desc">Supporting underrepresented students pursuing STEM degrees, with priority for Indigenous and Black-identifying applicants.</p>
+        <div class="card-meta">
+          <div class="amt">$15,000 <span class="coin">USDC</span></div>
+          <div class="deadline urgent">Apply by<span class="date">June 02, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="arts">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#6b2c91;">Leo</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">Leo Foundation</div>
+            </div>
+          </div>
+          <span class="tag region">National</span>
+        </div>
+        <h3>Leo Arts &amp; Humanities Bursary</h3>
+        <p class="desc">Annual bursary for students pursuing studio art, writing, film, or theatre programs at any accredited Canadian institution.</p>
+        <div class="card-meta">
+          <div class="amt">$5,000 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">July 20, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="trades">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#1bb15c;">TD</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">TD Scholars Program</div>
+            </div>
+          </div>
+        </div>
+        <h3>Skilled Trades Bursary</h3>
+        <p class="desc">For apprenticeship registrants in electrical, plumbing, HVAC, automotive, or carpentry programs. Tools allowance included.</p>
+        <div class="card-meta">
+          <div class="amt">$4,500 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">August 01, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="business">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#003d7a;">McG</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">McGill University</div>
+            </div>
+          </div>
+          <span class="tag region">Quebec</span>
+        </div>
+        <h3>Desautels Entrance Scholarship</h3>
+        <p class="desc">Awarded to incoming Bachelor of Commerce students with outstanding academic standing and demonstrated entrepreneurship.</p>
+        <div class="card-meta">
+          <div class="amt">$8,000 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">June 30, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="stem,need">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#0a0a0a;">UBC</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">University of British Columbia</div>
+            </div>
+          </div>
+          <span class="tag region">British Columbia</span>
+        </div>
+        <h3>Computing for Good Award</h3>
+        <p class="desc">Tuition support for CS students committed to building open-source software for public-benefit projects.</p>
+        <div class="card-meta">
+          <div class="amt">$6,000 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">July 05, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="need">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#a6192e;">YORK</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">York University</div>
+            </div>
+          </div>
+          <span class="tag region">Ontario</span>
+        </div>
+        <h3>Continuing Student Bursary</h3>
+        <p class="desc">Need-based assistance for returning undergraduate students in any program. Recipients chosen by financial aid office.</p>
+        <div class="card-meta">
+          <div class="amt">$3,200 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">September 15, 2026</span></div>
+        </div>
+      </div>
+
+      <div class="scholar-card" data-link="scholarship.html" data-cat="arts,stem">
+        <div class="top">
+          <div class="sponsor">
+            <div class="mark" style="background:#e8a317;">Q·U</div>
+            <div>
+              <div class="who">Sponsor</div>
+              <div class="who-name">Queen's University</div>
+            </div>
+          </div>
+          <span class="tag new">New</span>
+        </div>
+        <h3>Interdisciplinary Innovation Grant</h3>
+        <p class="desc">For students working across two or more faculties — particularly intersections of design, technology, and the humanities.</p>
+        <div class="card-meta">
+          <div class="amt">$12,000 <span class="coin">USDC</span></div>
+          <div class="deadline">Apply by<span class="date">June 20, 2026</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark"></span><div><div>GRANTED</div><div class="sub" style="color:#888;">Scholarship Foundation</div></div></div>
+        <p style="margin-top:14px; color:#888; font-size:14px; max-width:280px;">A non-profit infrastructure layer connecting students, foundations, and sponsors — paid in stablecoins, on-chain, the day funds are awarded.</p>
+      </div>
+      <div><h4>For Students</h4><ul><li><a href="#">Browse scholarships</a></li><li><a href="#">Eligibility checker</a></li><li><a href="#">Get a wallet</a></li><li><a href="#">FAQ</a></li></ul></div>
+      <div><h4>For Sponsors</h4><ul><li><a href="#">List a scholarship</a></li><li><a href="#">Foundation portal</a></li><li><a href="#">Reporting &amp; tax</a></li></ul></div>
+      <div><h4>Trust</h4><ul><li><a href="#">How payments work</a></li><li><a href="#">Identity verification</a></li><li><a href="#">Privacy &amp; safeguarding</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Granted Foundation. Demo storefront.</span><span>Built for stablecoin scholarship payouts.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

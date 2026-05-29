@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Submitted — Granted</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Search scholarships, schools…" />
+        </div>
+      </div>
+      <nav class="header-center">
+        <a class="nav-link" href="index.html">All Scholarships</a>
+        <a class="nav-link" href="#">Featured Schools</a>
+        <a class="nav-link" href="#">By Field of Study</a>
+        <div class="region-menu">
+          <button class="nav-link" data-region-toggle>
+            Region
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="region-panel" data-region-panel>
+            <a href="region.html"><div class="flag" style="background:#c8493b;">ON</div>Ontario</a>
+            <a href="region.html"><div class="flag" style="background:#1bb15c;">AB</div>Alberta</a>
+            <a href="region.html"><div class="flag" style="background:#2775ca;">BC</div>British Columbia</a>
+            <a href="region.html"><div class="flag" style="background:#7d2d8c;">QC</div>Quebec</a>
+            <a href="region.html"><div class="flag" style="background:#f5a623;">MB</div>Manitoba</a>
+            <a href="region.html"><div class="flag" style="background:#0a0a0a;">NS</div>Nova Scotia</a>
+            <a href="region.html"><div class="flag" style="background:#5a6470;">SK</div>Saskatchewan</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#">How it works</a>
+      </nav>
+      <div class="header-right">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"></span>
+          <div>
+            <div>GRANTED</div>
+            <div class="sub">Scholarship Foundation</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="success-wrap">
+    <div class="success-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 12 10 18 20 6"/>
+      </svg>
+    </div>
+
+    <h1>Application submitted</h1>
+    <p>Your identity has been verified and your application is now in the selection committee's queue. You'll hear back by email — and if approved, funds land in your wallet automatically.</p>
+
+    <div class="success-actions">
+      <a class="btn btn-dark btn-lg" href="index.html">Browse more scholarships</a>
+      <a class="btn btn-primary btn-lg" href="#">Track my application</a>
+    </div>
+
+    <div class="success-meta" data-success-meta>
+      <div class="success-meta-row"><span class="k">Application ID</span><span class="v" data-meta-app>—</span></div>
+      <div class="success-meta-row"><span class="k">Scholarship</span><span class="v" data-meta-scholar>—</span></div>
+      <div class="success-meta-row"><span class="k">Sponsor</span><span class="v" data-meta-sponsor>—</span></div>
+      <div class="success-meta-row"><span class="k">Award amount</span><span class="v" data-meta-amount>—</span></div>
+      <div class="success-meta-row"><span class="k">Deadline</span><span class="v" data-meta-deadline>—</span></div>
+      <div class="success-meta-row"><span class="k">Submitted</span><span class="v" data-meta-time>—</span></div>
+      <div class="success-meta-row"><span class="k">Verification tx</span><span class="v" data-meta-tx style="font-family:ui-monospace, monospace; font-size:12px;">—</span></div>
+    </div>
+
+    <p style="font-size:13px; color:var(--ink-mute); margin-top:28px; max-width:480px;">
+      An email confirmation has been sent to your verified address. If your application is approved, the
+      award amount will be released directly to your wallet on the published award date — typically
+      within 12 seconds of approval.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark"></span><div><div>GRANTED</div><div class="sub" style="color:#888;">Scholarship Foundation</div></div></div>
+        <p style="margin-top:14px; color:#888; font-size:14px; max-width:280px;">A non-profit infrastructure layer connecting students, foundations, and sponsors — paid in stablecoins, on-chain, the day funds are awarded.</p>
+      </div>
+      <div><h4>For Students</h4><ul><li><a href="#">Browse scholarships</a></li><li><a href="#">Eligibility checker</a></li><li><a href="#">Get a wallet</a></li><li><a href="#">FAQ</a></li></ul></div>
+      <div><h4>For Sponsors</h4><ul><li><a href="#">List a scholarship</a></li><li><a href="#">Foundation portal</a></li><li><a href="#">Reporting &amp; tax</a></li></ul></div>
+      <div><h4>Trust</h4><ul><li><a href="#">How payments work</a></li><li><a href="#">Identity verification</a></li><li><a href="#">Privacy &amp; safeguarding</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Granted Foundation. Demo storefront.</span><span>Built for stablecoin scholarship payouts.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

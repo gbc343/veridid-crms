@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Bag — Stride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"></span>STRIDE</a>
+      <ul class="main-nav">
+        <li><a href="index.html">New</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Clearance</a></li>
+      </ul>
+      <div class="header-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Search products…" />
+        </div>
+        <button class="icon-btn" title="Sign in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <a class="icon-btn" href="checkout.html" title="Your bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Bag</div>
+    <h1>Items Bagged</h1>
+    <p>Review your order and pay in stablecoins with one scan.</p>
+  </section>
+
+  <!-- ============ CHECKOUT GRID ============ -->
+  <section class="checkout-grid">
+
+    <!-- LEFT: cart items + recommended -->
+    <div>
+      <div class="cart-list" data-cart-list>
+        <!-- rendered by script.js -->
+      </div>
+
+      <div style="margin-top:50px;">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" style="font-size:24px;">Recommended for you</h2>
+            <p class="section-sub">Pairs well with what you've got.</p>
+          </div>
+        </div>
+        <div class="gallery-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap:16px;">
+          <a class="product-card" href="women-item.html">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="product-meta">
+              <div><p class="product-name">Compression Socks</p><p class="product-cat">Accessories</p></div>
+              <div class="product-price">$18</div>
+            </div>
+          </a>
+          <a class="product-card" href="men-item.html">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="product-meta">
+              <div><p class="product-name">Performance Cap</p><p class="product-cat">Accessories</p></div>
+              <div class="product-price">$28</div>
+            </div>
+          </a>
+          <a class="product-card" href="women-item.html">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="product-meta">
+              <div><p class="product-name">Pulse Sports Bra</p><p class="product-cat">Tops</p></div>
+              <div class="product-price">$54</div>
+            </div>
+          </a>
+          <a class="product-card" href="men-item.html">
+            <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="product-meta">
+              <div><p class="product-name">Edge Tee</p><p class="product-cat">Tops</p></div>
+              <div class="product-price">$29</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: order summary -->
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+
+      <div class="summary-row"><span>Subtotal</span><span data-subtotal>$0.00</span></div>
+      <div class="summary-row"><span>Shipping</span><span style="color:var(--ink); font-weight:600;">Free</span></div>
+      <div class="summary-row"><span>Estimated tax (8%)</span><span data-tax>$0.00</span></div>
+      <div class="summary-row total"><span>Total</span><span data-total>$0.00</span></div>
+
+      <div style="margin-top:24px;">
+        <label class="option-label">Pay with</label>
+        <div class="coin-row">
+          <button class="coin-chip is-active" data-coin="USDC">
+            <span class="dot" style="background:#2775ca;"></span>USDC
+          </button>
+          <button class="coin-chip" data-coin="USDT">
+            <span class="dot" style="background:#26a17b;"></span>USDT
+          </button>
+          <button class="coin-chip" data-coin="DAI">
+            <span class="dot" style="background:#f5ac37;"></span>DAI
+          </button>
+        </div>
+        <p style="font-size:12px; color:var(--ink-soft); margin:8px 0 0;">
+          Network: Base · Polygon · Ethereum (auto-detected)
+        </p>
+      </div>
+
+      <button class="btn btn-dark btn-block btn-lg" data-pay-btn style="margin-top:24px;">
+        Proceed with Purchase
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+
+      <p style="font-size:12px; color:var(--ink-soft); margin-top:14px; text-align:center;">
+        🔒 Non-custodial · We never touch your funds.
+      </p>
+    </aside>
+  </section>
+
+  <!-- ============ QR OVERLAY ============ -->
+  <div class="qr-overlay" data-qr-overlay>
+    <div class="qr-modal">
+      <button class="qr-close" data-qr-close aria-label="Close">×</button>
+      <h2>Scan to pay</h2>
+      <p>Open your mobile wallet and scan the QR code below to complete your purchase.</p>
+
+      <div class="qr-frame">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=stride%3Apay%3Fto%3D0x7Be...%26amount%3DUSDC%26chain%3Dbase&margin=0&color=0a0a0a"
+             alt="Stride payment QR code" />
+      </div>
+
+      <div class="qr-pay-amount">
+        $<span data-qr-amount>0.00</span>
+        <span class="coin" data-coin-label>USDC</span>
+      </div>
+      <div class="qr-network">on Base · sent to stride.eth</div>
+
+      <p class="qr-confirm">
+        Waiting for on-chain confirmation…
+        <br/>
+        <a data-qr-confirm>I've paid — confirm now</a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="logo" style="color:#fff;"><span class="logo-mark"></span>STRIDE</div>
+        <p style="margin-top:14px; color:#888; font-size:14px; max-width:280px;">Performance sportswear, paid for the way the internet pays — in stablecoins.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="women.html">Women</a></li><li><a href="men.html">Men</a></li><li><a href="#">Accessories</a></li><li><a href="#">Sale</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div><h4>Crypto</h4><ul><li><a href="#">Supported chains</a></li><li><a href="#">How it works</a></li><li><a href="#">Refunds & on-chain receipts</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stride Athletics. Demo storefront.</span><span>Built for stablecoin checkout.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

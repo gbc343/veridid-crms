@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In meeting — Beam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="call-shell">
+
+    <!-- ============ TOPBAR ============ -->
+    <header class="call-topbar">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>BEAM</a>
+
+      <div style="margin-left:18px;">
+        <div class="meeting-title" data-call-title>Web3 Founders Roundtable</div>
+        <div class="meeting-sub" data-call-host>Hosted by Maya Chen</div>
+      </div>
+
+      <div style="flex:1;"></div>
+
+      <span class="live-chip"><span class="dot"></span>Live</span>
+      <span class="clock" data-call-clock>00:00:00</span>
+    </header>
+
+    <!-- ============ STAGE ============ -->
+    <div class="call-stage">
+
+      <!-- Video grid -->
+      <div class="video-grid">
+
+        <!-- You -->
+        <div class="video-tile me" style="background: linear-gradient(135deg, #1a2e1a 0%, #2a4a2a 100%);">
+          <div class="initials" style="background:#c6ff3d; color:#0a0a0a;">GW</div>
+          <div class="label">
+            You (Gordon W.)
+            <svg class="muted-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+          </div>
+        </div>
+
+        <!-- Host -->
+        <div class="video-tile" style="background: linear-gradient(135deg, #2b1a3e 0%, #3d2a5a 100%);">
+          <div class="initials" style="background:#7d2d8c;">MC</div>
+          <span class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div class="label">Maya Chen · Host</div>
+        </div>
+
+        <!-- Other participants -->
+        <div class="video-tile" style="background: linear-gradient(135deg, #3e2b1a 0%, #5a4128 100%);">
+          <div class="initials" style="background:#c8493b;">JR</div>
+          <div class="label">
+            Joel Reyes
+            <svg class="muted-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/></svg>
+          </div>
+        </div>
+
+        <div class="video-tile" style="background: linear-gradient(135deg, #1a2c3e 0%, #2a4a6a 100%);">
+          <div class="initials" style="background:#2775ca;">AO</div>
+          <div class="label">Adaeze Okafor</div>
+        </div>
+
+        <div class="video-tile" style="background: linear-gradient(135deg, #3e1a2c 0%, #5a2a44 100%);">
+          <div class="initials" style="background:#a6192e;">RS</div>
+          <div class="label">Rahul Sharma</div>
+        </div>
+
+        <div class="video-tile" style="background: linear-gradient(135deg, #2b3e1a 0%, #46663a 100%);">
+          <div class="initials" style="background:#5d6644;">LP</div>
+          <div class="label">
+            Lena P.
+            <svg class="muted-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/></svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Side panel -->
+      <aside class="call-side">
+        <div class="tabs">
+          <button class="is-active" data-tab="participants">Participants · 14</button>
+          <button data-tab="chat">Chat</button>
+        </div>
+
+        <div class="panel" data-panel="participants">
+          <div class="participant">
+            <div class="ava" style="background:#7d2d8c;">MC</div>
+            <div class="who"><span class="name">Maya Chen</span><span class="sub">Host</span></div>
+            <div class="mics">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+          </div>
+          <div class="participant">
+            <div class="ava" style="background:#c6ff3d; color:#0a0a0a;">GW</div>
+            <div class="who"><span class="name">Gordon W. (you)</span><span class="sub">gordon.eth</span></div>
+            <div class="mics">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+          </div>
+          <div class="participant">
+            <div class="ava" style="background:#c8493b;">JR</div>
+            <div class="who"><span class="name">Joel Reyes</span><span class="sub">@joelreyes</span></div>
+            <div class="mics"><svg class="muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/></svg></div>
+          </div>
+          <div class="participant">
+            <div class="ava" style="background:#2775ca;">AO</div>
+            <div class="who"><span class="name">Adaeze Okafor</span><span class="sub">@adaeze</span></div>
+            <div class="mics">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+          </div>
+          <div class="participant">
+            <div class="ava" style="background:#a6192e;">RS</div>
+            <div class="who"><span class="name">Rahul Sharma</span><span class="sub">@rsharma</span></div>
+            <div class="mics">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+          </div>
+          <div class="participant">
+            <div class="ava" style="background:#5d6644;">LP</div>
+            <div class="who"><span class="name">Lena P.</span><span class="sub">@lena.eth</span></div>
+            <div class="mics"><svg class="muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/></svg></div>
+          </div>
+          <div style="border-top:1px solid rgba(255,255,255,0.06); margin:10px 0; padding-top:10px; color:rgba(255,255,255,0.4); font-size:12px; padding-left:6px;">
+            + 8 more participants
+          </div>
+        </div>
+
+        <div class="panel" data-panel="chat" style="display:none;">
+          <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.6;">
+            <p style="margin:0 0 10px;"><strong style="color:#fff;">Maya Chen</strong> · 14m ago<br/>Welcome everyone — we'll start in a few minutes once everyone's joined.</p>
+            <p style="margin:0 0 10px;"><strong style="color:#fff;">Adaeze Okafor</strong> · 11m ago<br/>Quick question on the new EIP — link below 👇</p>
+            <p style="margin:0 0 10px;"><strong style="color:#fff;">Maya Chen</strong> · 8m ago<br/>Great point — let's queue that for the second half.</p>
+            <p style="margin:0; color:rgba(255,255,255,0.3); font-size:11px;">No new messages</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- ============ CONTROLS ============ -->
+    <div class="call-controls">
+      <div class="info">
+        Billed <strong>$0.04 / min</strong> · <span style="color:var(--accent);">$0.16 so far</span>
+      </div>
+
+      <button class="ctl" data-toggle="mic" title="Toggle microphone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+      </button>
+
+      <button class="ctl" data-toggle="cam" title="Toggle camera">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+      </button>
+
+      <button class="ctl" title="Share screen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </button>
+
+      <button class="ctl" title="Reactions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      </button>
+
+      <button class="ctl" title="More">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+      </button>
+
+      <button class="ctl ctl-leave" data-leave>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" transform="rotate(135 12 12)"/></svg>
+        Leave
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

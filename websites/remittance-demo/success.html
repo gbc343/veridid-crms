@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer Sent — Drift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <a href="dashboard.html" class="brand"><span class="brand-mark"></span><span>DRIFT</span></a>
+
+    <div class="side-section-label">Main</div>
+    <ul class="side-nav">
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        <span>Dashboard</span></a></li>
+      <li><a href="send.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span>Send Money</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 12 9 6 9 18 21 18"/><line x1="3" y1="12" x2="3" y2="18"/></svg>
+        <span>Receive Money</span></a></li>
+      <li><a href="balances.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <span>Balances</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Activity</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Recipients</span></a></li>
+    </ul>
+
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9 1.65 1.65 0 0 0 4.27 7.18l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Settings</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Support</span></a></li>
+    </ul>
+
+    <div class="side-foot">
+      <div class="user-chip">
+        <div class="avatar">GW</div>
+        <div>
+          <div class="name">Gordon W.</div>
+          <div class="role">Personal account</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="success-page">
+      <div class="success-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="4 12 10 18 20 6"/>
+        </svg>
+      </div>
+
+      <h1>Transfer sent</h1>
+      <p>Your funds have settled on-chain and the recipient will see the local-currency payout in their account momentarily.</p>
+
+      <div class="success-actions">
+        <a class="btn btn-dark btn-lg" href="dashboard.html">Back to Dashboard</a>
+        <a class="btn btn-primary btn-lg" href="send.html">Send Another</a>
+      </div>
+
+      <div class="success-receipt"><span data-meta-tx>0x000000…</span></div>
+
+      <div class="success-meta" data-success-meta>
+        <div class="success-meta-row"><span class="k">Recipient</span><span class="v" data-meta-recipient>—</span></div>
+        <div class="success-meta-row"><span class="k">You sent</span><span class="v" data-meta-sent>—</span></div>
+        <div class="success-meta-row"><span class="k">Recipient gets</span><span class="v" data-meta-received>—</span></div>
+        <div class="success-meta-row"><span class="k">Purpose</span><span class="v" data-meta-kind>—</span></div>
+        <div class="success-meta-row"><span class="k">Settled</span><span class="v" data-meta-time>—</span></div>
+        <div class="success-meta-row"><span class="k">Transaction</span><span class="v" data-meta-tx style="font-family:ui-monospace, monospace; font-size:12px;">—</span></div>
+      </div>
+
+      <p style="font-size:13px; color:var(--ink-mute); margin-top:28px;">
+        A copy of this receipt has been emailed to you. Need to refund? Funds can be returned to the sender's wallet from the activity page.
+      </p>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

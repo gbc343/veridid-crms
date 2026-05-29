@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Money — Drift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <a href="dashboard.html" class="brand"><span class="brand-mark"></span><span>DRIFT</span></a>
+
+    <div class="side-section-label">Main</div>
+    <ul class="side-nav">
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        <span>Dashboard</span></a></li>
+      <li><a href="send.html" class="is-active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span>Send Money</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 12 9 6 9 18 21 18"/><line x1="3" y1="12" x2="3" y2="18"/></svg>
+        <span>Receive Money</span></a></li>
+      <li><a href="balances.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <span>Balances</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Activity</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Recipients</span></a></li>
+    </ul>
+
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9 1.65 1.65 0 0 0 4.27 7.18l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Settings</span></a></li>
+      <li><a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Support</span></a></li>
+    </ul>
+
+    <div class="side-foot">
+      <div class="user-chip">
+        <div class="avatar">GW</div>
+        <div>
+          <div class="name">Gordon W.</div>
+          <div class="role">Personal account</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Transfers</div>
+        <h1>Send Money</h1>
+      </div>
+      <div class="topbar-spacer"></div>
+      <div style="font-size:13px; color:var(--ink-soft); display:flex; align-items:center; gap:6px;">
+        <span style="background:var(--positive); width:8px; height:8px; border-radius:999px;"></span>
+        FX rates live · refreshed every 10s
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="send-shell">
+
+        <!-- =========== FORM =========== -->
+        <form class="send-form" onsubmit="return false;">
+          <h2>New international transfer</h2>
+          <p class="lede">Cross-border in seconds — settled on-chain in stablecoins, paid out in local currency.</p>
+
+          <!-- Step 1: Source account -->
+          <div class="form-step">
+            <div class="step-label"><span class="step-num">1</span>Transfer from</div>
+            <div class="account-row">
+              <button type="button" class="account-pick is-active" data-currency="USD">
+                <div class="top"><div class="flag" style="background:#2775ca;">USD</div>US Dollar</div>
+                <div class="amt">$28,410.20</div>
+                <div class="coin">USDC · Base</div>
+              </button>
+              <button type="button" class="account-pick" data-currency="EUR">
+                <div class="top"><div class="flag" style="background:#003399;">EUR</div>Euro</div>
+                <div class="amt">€8,920.00</div>
+                <div class="coin">EURC · Polygon</div>
+              </button>
+              <button type="button" class="account-pick" data-currency="GBP">
+                <div class="top"><div class="flag" style="background:#c8102e;">GBP</div>Pound</div>
+                <div class="amt">£3,210.50</div>
+                <div class="coin">GBPT · Ethereum</div>
+              </button>
+              <button type="button" class="account-pick" data-currency="JPY">
+                <div class="top"><div class="flag" style="background:#bc002d;">JPY</div>Yen</div>
+                <div class="amt">¥184,200</div>
+                <div class="coin">JPYC · Ethereum</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Amount + convert -->
+          <div class="form-step">
+            <div class="step-label"><span class="step-num">2</span>Amount &amp; destination currency</div>
+            <div class="amount-row">
+              <div class="amount-field">
+                <label>You send</label>
+                <div class="field">
+                  <input type="number" value="500" min="1" step="1" data-send-amount />
+                  <select data-from-currency>
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                  </select>
+                </div>
+              </div>
+              <button type="button" class="swap-btn" title="Swap currencies">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+              <div class="amount-field">
+                <label>Recipient gets (≈)</label>
+                <div class="field" style="background:#fff;">
+                  <input type="text" readonly data-receive-amount value="460.00" style="color:var(--ink);" />
+                  <select data-to-currency>
+                    <option value="EUR" selected>EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="MXN">MXN</option>
+                    <option value="NGN">NGN</option>
+                    <option value="INR">INR</option>
+                    <option value="BRL">BRL</option>
+                    <option value="PHP">PHP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KES">KES</option>
+                    <option value="COP">COP</option>
+                    <option value="CAD">CAD</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div style="font-size:12px; color:var(--ink-mute); margin-top:10px;">
+              Mid-market rate · <span data-rate-display>1 USD = 0.92 EUR</span> · No spreads.
+            </div>
+          </div>
+
+          <!-- Step 3: Recipient -->
+          <div class="form-step">
+            <div class="step-label"><span class="step-num">3</span>Recipient</div>
+            <input class="input" placeholder="Recipient full name" value="Maria Hernández" data-recipient />
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:10px;">
+              <input class="input" placeholder="Wallet address or @handle" value="maria.eth" />
+              <input class="input" placeholder="Email (optional)" value="maria@example.mx" />
+            </div>
+          </div>
+
+          <!-- Step 4: Purpose -->
+          <div class="form-step">
+            <div class="step-label"><span class="step-num">4</span>Purpose of transfer</div>
+
+            <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+              <div class="toggle-group">
+                <button type="button" data-kind="personal" class="is-active">Personal</button>
+                <button type="button" data-kind="business">Business</button>
+              </div>
+              <input type="hidden" data-purpose-kind value="personal" />
+
+              <select class="input" style="width:auto; min-width:220px; padding:10px 14px; font-weight:500;">
+                <option>Family support</option>
+                <option>Gift</option>
+                <option>Living expenses</option>
+                <option>Education</option>
+                <option>Property / rent</option>
+                <option>Vendor invoice</option>
+                <option>Payroll</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <textarea class="input" data-purpose-text placeholder="Reference / memo (optional, shown to recipient)" style="margin-top:12px;"></textarea>
+          </div>
+
+          <button type="button" class="btn btn-dark btn-block btn-lg" data-pay-btn style="margin-top:8px;">
+            Continue with QR &nbsp;
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+
+          <p style="font-size:12px; color:var(--ink-mute); margin-top:14px; text-align:center;">
+            🔒 You'll be asked to scan a QR with your wallet to authorize the on-chain transfer. No funds move until you sign.
+          </p>
+        </form>
+
+        <!-- =========== SUMMARY =========== -->
+        <aside class="send-summary">
+          <h3>You're sending</h3>
+          <p class="sub">Final amounts before recipient FX.</p>
+
+          <div class="rate-line">
+            <span class="dot"></span>Locked rate · 60 seconds
+          </div>
+
+          <div class="summary-row"><span>Amount</span><strong><span data-send-display>500.00</span> <span data-send-code>USD</span></strong></div>
+          <div class="summary-row"><span>Drift fee (0.10%)</span><strong data-fee>0.50 USD</strong></div>
+          <div class="summary-row"><span>Network fee</span><strong>$0.001</strong></div>
+          <div class="summary-row"><span>Route</span><strong>USDC → EURC on Base</strong></div>
+          <div class="summary-row"><span>Settle time</span><strong>≈ 12s</strong></div>
+
+          <div class="summary-row big">
+            <span>Total charge</span><strong data-total>500.50 USD</strong>
+          </div>
+
+          <div style="margin-top:18px; padding:14px; background:rgba(255,255,255,0.05); border-radius:10px; font-size:12px; color:rgba(255,255,255,0.7);">
+            <strong style="color:#fff; display:block; margin-bottom:4px;">Recipient receives</strong>
+            <span style="font-size:22px; font-weight:800; color:var(--accent); letter-spacing:-0.02em;">
+              <span data-receive-amount>460.00</span> <span data-receive-code>EUR</span>
+            </span>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ============ QR OVERLAY ============ -->
+<div class="qr-overlay" data-qr-overlay>
+  <div class="qr-modal">
+    <button class="qr-close" data-qr-close aria-label="Close">×</button>
+    <h2>Scan to authorize</h2>
+    <p class="desc">Open your mobile wallet and scan to sign this transfer.</p>
+
+    <div class="qr-frame">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=drift%3Atransfer%3Famount%3D500%26from%3DUSD%26to%3DEUR%26chain%3Dbase&margin=0&color=0a0a0a"
+           alt="Drift transfer QR code" />
+    </div>
+
+    <div class="qr-amount" data-qr-amount>500.50 USD</div>
+    <p class="qr-route">
+      <span>USDC · Base</span><span class="arr">→</span><span data-qr-receive>460.00 EUR</span>
+    </p>
+
+    <p class="qr-confirm">
+      Waiting for wallet signature…
+      <br/>
+      <a data-qr-confirm>I've signed — confirm now</a>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

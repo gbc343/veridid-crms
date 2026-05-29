@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attend a Meeting — Beam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>BEAM</a>
+      <div class="header-spacer"></div>
+      <button class="user-button">
+        <span class="avatar">GW</span>
+        Gordon W.
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ ATTEND ============ -->
+  <main class="attend-wrap">
+
+    <!-- LIST VIEW -->
+    <div data-meeting-list>
+      <div class="page-head">
+        <div class="crumb"><a href="index.html">Home</a> / Attend a meeting</div>
+        <h1>Which meeting are you attending?</h1>
+        <p>Select from your scheduled invites and ongoing rooms. Meeting fees are charged from your connected wallet when you join.</p>
+      </div>
+
+      <div class="meeting-list">
+
+        <!-- Meeting 1: live now -->
+        <div class="meeting-row"
+             data-title="Web3 Founders Roundtable"
+             data-host="Maya Chen"
+             data-fee="$2.50 USDC"
+             data-time="Today, ongoing">
+          <div class="when">
+            <div class="day">Now</div>
+            <div class="date" style="font-size:18px;">Live</div>
+            <div class="time">14 in call</div>
+          </div>
+          <div class="info">
+            <h3>Web3 Founders Roundtable</h3>
+            <p>Weekly open-floor session for early-stage founders building on Base and Optimism. Bring your hardest problem.</p>
+            <div class="meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Hosted by Maya Chen
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                60 min · started 24 min ago
+              </span>
+              <span class="fee">$2.50 USDC</span>
+            </div>
+          </div>
+          <button class="btn btn-primary select-action" data-select-meeting>
+            Join now
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Meeting 2 -->
+        <div class="meeting-row"
+             data-title="Design Critique — Q2 Mockups"
+             data-host="Acme Studios"
+             data-fee="Free"
+             data-time="Today, 3:00 PM">
+          <div class="when">
+            <div class="day">Today</div>
+            <div class="date">29</div>
+            <div class="time">3:00 PM</div>
+          </div>
+          <div class="info">
+            <h3>Design Critique — Q2 Mockups</h3>
+            <p>Internal review of the new dashboard mockups. Walkthrough + group critique. Bring Figma comments.</p>
+            <div class="meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Hosted by Acme Studios
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                45 min
+              </span>
+              <span class="fee free">Free</span>
+            </div>
+          </div>
+          <button class="btn btn-dark select-action" data-select-meeting>Select meeting</button>
+        </div>
+
+        <!-- Meeting 3: paid expert -->
+        <div class="meeting-row"
+             data-title="1:1 with Dr. Lena Roy — Tax Strategy"
+             data-host="Lena Roy, CPA"
+             data-fee="$48.00 USDC"
+             data-time="Tomorrow, 10:30 AM">
+          <div class="when">
+            <div class="day">Sat</div>
+            <div class="date">30</div>
+            <div class="time">10:30 AM</div>
+          </div>
+          <div class="info">
+            <h3>1:1 with Dr. Lena Roy — Tax Strategy</h3>
+            <p>Paid consultation. Crypto-friendly tax planning for self-employed individuals. Bring your last filing.</p>
+            <div class="meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Hosted by Lena Roy, CPA
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                30 min · 1:1
+              </span>
+              <span class="fee">$48.00 USDC</span>
+            </div>
+          </div>
+          <button class="btn btn-dark select-action" data-select-meeting>Select meeting</button>
+        </div>
+
+        <!-- Meeting 4 -->
+        <div class="meeting-row"
+             data-title="Solidity Office Hours"
+             data-host="Open Source Collective"
+             data-fee="$1.00 USDC"
+             data-time="Mon Jun 1, 5:00 PM">
+          <div class="when">
+            <div class="day">Mon</div>
+            <div class="date">01</div>
+            <div class="time">5:00 PM</div>
+          </div>
+          <div class="info">
+            <h3>Solidity Office Hours</h3>
+            <p>Drop in for code review, gas optimization questions, or general smart-contract debugging. All levels welcome.</p>
+            <div class="meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Hosted by Open Source Collective
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                90 min
+              </span>
+              <span class="fee">$1.00 USDC</span>
+            </div>
+          </div>
+          <button class="btn btn-dark select-action" data-select-meeting>Select meeting</button>
+        </div>
+
+        <!-- Meeting 5 -->
+        <div class="meeting-row"
+             data-title="Book Club — &quot;The Sovereign Individual&quot;"
+             data-host="Reader Circle"
+             data-fee="$3.00 USDC"
+             data-time="Tue Jun 2, 7:30 PM">
+          <div class="when">
+            <div class="day">Tue</div>
+            <div class="date">02</div>
+            <div class="time">7:30 PM</div>
+          </div>
+          <div class="info">
+            <h3>Book Club — "The Sovereign Individual"</h3>
+            <p>Chapters 5-7 discussion. Casual setting, optional questions sent ahead of time. Drink something warm.</p>
+            <div class="meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Hosted by Reader Circle
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                75 min
+              </span>
+              <span class="fee">$3.00 USDC</span>
+            </div>
+          </div>
+          <button class="btn btn-dark select-action" data-select-meeting>Select meeting</button>
+        </div>
+
+      </div>
+
+      <p style="margin-top:28px; text-align:center; font-size:13px; color:var(--ink-mute);">
+        Don't see your meeting? <a href="#" style="text-decoration:underline; color:var(--ink-soft);">Join by code</a> instead.
+      </p>
+    </div>
+
+    <!-- QR VIEW -->
+    <div data-qr-view style="display:none;">
+
+      <div class="qr-stage">
+        <span class="meeting-pill">
+          <span class="badge">Joining</span>
+          <span data-qr-title>Meeting</span>
+        </span>
+
+        <h2>Scan to confirm</h2>
+        <p class="lede">Open your wallet and scan the code below. Once your wallet confirms the fee, you'll drop straight into the call.</p>
+
+        <div class="qr-frame">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=beam%3Ajoin%3Fmeeting%3Dweb3-founders%26fee%3D2.5-USDC%26chain%3Dbase&margin=0&color=0a0a0a"
+               alt="Beam meeting QR code" />
+        </div>
+
+        <div class="qr-cost">
+          <span data-qr-fee>$2.50 USDC</span>
+          <span class="coin">on Base</span>
+        </div>
+        <div class="qr-meta">
+          Hosted by <span data-qr-host>—</span> · <span data-qr-time>—</span>
+        </div>
+
+        <div class="qr-status">
+          <span class="pulse"></span>
+          Waiting for wallet to authorize…
+        </div>
+
+        <p class="qr-help">
+          Don't have a wallet? <a href="#">Get one in 30 seconds</a><br/>
+          Already paid? <a data-qr-confirm>Continue to meeting</a>
+        </p>
+
+        <div class="qr-actions">
+          <button class="btn btn-ghost" data-cancel-qr>← Back to list</button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="mini-footer">
+    © 2026 Beam Networks · Demo storefront · Built for stablecoin video meetings
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

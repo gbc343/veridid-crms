@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Successful — Stride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"></span>STRIDE</a>
+      <ul class="main-nav">
+        <li><a href="index.html">New</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Clearance</a></li>
+      </ul>
+      <div class="header-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Search products…" />
+        </div>
+        <button class="icon-btn" title="Sign in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <a class="icon-btn" href="checkout.html" title="Your bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SUCCESS ============ -->
+  <main class="success-page">
+    <div class="success-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 12 10 18 20 6"/>
+      </svg>
+    </div>
+
+    <h1>Purchase was successful</h1>
+    <p>Thanks for paying with stablecoins. Your on-chain receipt has been recorded and your order is on its way.</p>
+
+    <div class="success-actions">
+      <a class="btn btn-dark btn-lg" href="index.html">Continue Shopping</a>
+      <a class="btn btn-primary btn-lg" href="#">View Order Status</a>
+    </div>
+
+    <div class="success-receipt" data-receipt>Tx 0x000000…</div>
+
+    <div style="margin-top:60px; max-width:520px; text-align:left; background:var(--bg-soft); border-radius:14px; padding:24px;">
+      <h3 style="margin:0 0 10px; font-size:16px;">What happens next</h3>
+      <ol style="padding-left:18px; margin:0; color:var(--ink-soft); font-size:14px; line-height:1.8;">
+        <li>You'll get a confirmation email with your on-chain receipt within a minute.</li>
+        <li>Orders placed before 2pm EST ship same-day from our Brooklyn warehouse.</li>
+        <li>Need a refund? We can settle it back to the same wallet — no card chargebacks needed.</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="logo" style="color:#fff;"><span class="logo-mark"></span>STRIDE</div>
+        <p style="margin-top:14px; color:#888; font-size:14px; max-width:280px;">Performance sportswear, paid for the way the internet pays — in stablecoins.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="women.html">Women</a></li><li><a href="men.html">Men</a></li><li><a href="#">Accessories</a></li><li><a href="#">Sale</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div><h4>Crypto</h4><ul><li><a href="#">Supported chains</a></li><li><a href="#">How it works</a></li><li><a href="#">Refunds & on-chain receipts</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stride Athletics. Demo storefront.</span><span>Built for stablecoin checkout.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

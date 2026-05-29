@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Collection — Stride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"></span>STRIDE</a>
+      <ul class="main-nav">
+        <li><a href="index.html">New</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html" class="is-active">Men</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Clearance</a></li>
+      </ul>
+      <div class="header-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Search products…" />
+        </div>
+        <button class="icon-btn" title="Sign in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <a class="icon-btn" href="checkout.html" title="Your bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Men</div>
+    <h1>Men's Collection</h1>
+    <p>Engineered fabrics. Honest fits. Made for the work between the start line and the finish.</p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="filter-bar">
+      <label>Filter:</label>
+      <select>
+        <option>All categories</option>
+        <option>Tops</option>
+        <option>Pants & Joggers</option>
+        <option>Shorts</option>
+        <option>Footwear</option>
+        <option>Outerwear</option>
+      </select>
+      <select>
+        <option>All sizes</option>
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+      </select>
+      <select>
+        <option>All colors</option>
+        <option>Black</option><option>White</option><option>Navy</option><option>Olive</option><option>Lime</option>
+      </select>
+      <select>
+        <option>Sort: Featured</option>
+        <option>Newest</option>
+        <option>Price: Low → High</option>
+        <option>Price: High → Low</option>
+      </select>
+    </div>
+
+    <!-- ROW 1: Tops -->
+    <div class="section-header" style="margin-top:10px;">
+      <div>
+        <h2 class="section-title">Tops & Hoodies</h2>
+        <p class="section-sub">Layers that breathe when you push.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-scroller">
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80')">
+            <span class="product-tag is-new">New</span>
+          </div>
+          <div class="product-meta">
+            <div><p class="product-name">Aero Tech Hoodie</p><p class="product-cat">Tops</p></div>
+            <div class="product-price">$96</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80')">
+            <span class="product-tag is-sale">-30%</span>
+          </div>
+          <div class="product-meta">
+            <div><p class="product-name">Edge Performance Tee</p><p class="product-cat">Tops</p></div>
+            <div class="product-price"><span class="strike">$42</span>$29</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1622519407650-3df9883f76a5?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Mile Marker Singlet</p><p class="product-cat">Tops</p></div>
+            <div class="product-price">$38</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Base Layer Long-Sleeve</p><p class="product-cat">Tops</p></div>
+            <div class="product-price">$58</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Shell Windbreaker</p><p class="product-cat">Outerwear</p></div>
+            <div class="product-price">$110</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ROW 2: Pants & Shorts -->
+    <div class="section-header" style="margin-top:50px;">
+      <div>
+        <h2 class="section-title">Pants & Shorts</h2>
+        <p class="section-sub">Engineered for stride.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-scroller">
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Sprint 7" Short</p><p class="product-cat">Shorts</p></div>
+            <div class="product-price">$48</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Core Joggers</p><p class="product-cat">Pants</p></div>
+            <div class="product-price">$78</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1602810316693-3667c854239a?auto=format&fit=crop&w=800&q=80')">
+            <span class="product-tag is-new">New</span>
+          </div>
+          <div class="product-meta">
+            <div><p class="product-name">Train Track Pant</p><p class="product-cat">Pants</p></div>
+            <div class="product-price">$84</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1591195854301-fbf9f8c8eb1f?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Stretch 9" Trainer Short</p><p class="product-cat">Shorts</p></div>
+            <div class="product-price">$52</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">All-Day Cargo Jogger</p><p class="product-cat">Pants</p></div>
+            <div class="product-price">$92</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ROW 3: Footwear & Accessories -->
+    <div class="section-header" style="margin-top:50px;">
+      <div>
+        <h2 class="section-title">Footwear & Accessories</h2>
+        <p class="section-sub">Complete the kit.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-scroller">
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Trail Pulse Runner</p><p class="product-cat">Footwear</p></div>
+            <div class="product-price">$148</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1542219550-37153d387c27?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Sprint XR Racer</p><p class="product-cat">Footwear</p></div>
+            <div class="product-price">$170</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80')">
+            <span class="product-tag is-sale">-20%</span>
+          </div>
+          <div class="product-meta">
+            <div><p class="product-name">Court Knit Trainer</p><p class="product-cat">Footwear</p></div>
+            <div class="product-price"><span class="strike">$140</span>$112</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Performance Cap</p><p class="product-cat">Accessories</p></div>
+            <div class="product-price">$28</div>
+          </div>
+        </a>
+        <a class="product-card" href="men-item.html">
+          <div class="product-thumb" style="background-image:url('https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="product-meta">
+            <div><p class="product-name">Compression Socks</p><p class="product-cat">Accessories</p></div>
+            <div class="product-price">$18</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="logo" style="color:#fff;"><span class="logo-mark"></span>STRIDE</div>
+        <p style="margin-top:14px; color:#888; font-size:14px; max-width:280px;">Performance sportswear, paid for the way the internet pays — in stablecoins.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="women.html">Women</a></li><li><a href="men.html">Men</a></li><li><a href="#">Accessories</a></li><li><a href="#">Sale</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div><h4>Crypto</h4><ul><li><a href="#">Supported chains</a></li><li><a href="#">How it works</a></li><li><a href="#">Refunds & on-chain receipts</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stride Athletics. Demo storefront.</span><span>Built for stablecoin checkout.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
