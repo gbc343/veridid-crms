@@ -1,5 +1,6 @@
 .env
 .claude
+crms/node_modules/
 
 # IDEs
 .idea/
